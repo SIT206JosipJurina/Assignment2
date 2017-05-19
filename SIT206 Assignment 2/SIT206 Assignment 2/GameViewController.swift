@@ -8,27 +8,47 @@
 
 import UIKit
 import SpriteKit
+import AVFoundation
 import GameplayKit
 
 class GameViewController: UIViewController {
+    
+    var player: AVAudioPlayer?
+    
+    func playSound(){
+        
+        let music = Bundle.main.path(forResource: "backgroundMusic", ofType: "mp3")
+        let audioN = NSURL(fileURLWithPath: music!)
+    do {
+        player = try AVAudioPlayer(contentsOf: audioN as URL)
+        
+        
+        player?.prepareToPlay()
+        player?.numberOfLoops = -1
+        player?.play()
+    
+    } catch let error {
+        print(error.localizedDescription)
+        }
+
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
+            if let view = self.view as! SKView? {
+                playSound()
+                let scene = MainMenuScene(size: CGSize(width: 1536, height: 2048))
+                
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFill
                 
                 // Present the scene
                 view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
+                view.ignoresSiblingOrder = true
+                view.showsFPS = true
+                view.showsNodeCount = true
         }
     }
 

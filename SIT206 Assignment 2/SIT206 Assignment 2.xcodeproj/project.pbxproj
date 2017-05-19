@@ -15,6 +15,12 @@
 		6A5E83F61EB1A33C00253FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5E83F41EB1A33C00253FE4 /* Main.storyboard */; };
 		6A5E83F81EB1A33C00253FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5E83F71EB1A33C00253FE4 /* Assets.xcassets */; };
 		6A5E83FB1EB1A33C00253FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5E83F91EB1A33C00253FE4 /* LaunchScreen.storyboard */; };
+		6A9755191ECD65150058E7E6 /* bulletSoundEffect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6A9755181ECD65150058E7E6 /* bulletSoundEffect.mp3 */; };
+		6A97551B1ECD7CB00058E7E6 /* explosionSoundEffect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A97551A1ECD7CB00058E7E6 /* explosionSoundEffect.wav */; };
+		6A97551D1ECD7EC70058E7E6 /* theBoldFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A97551C1ECD7EC70058E7E6 /* theBoldFont.ttf */; };
+		6A97551F1ECD8DE90058E7E6 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97551E1ECD8DE90058E7E6 /* GameOverScene.swift */; };
+		6AC665E31ECEA8A000FA9879 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC665E21ECEA8A000FA9879 /* MainMenuScene.swift */; };
+		6AC665E51ECEB74200FA9879 /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6AC665E41ECEB74200FA9879 /* backgroundMusic.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		6A5E83F71EB1A33C00253FE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5E83FA1EB1A33C00253FE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5E83FC1EB1A33C00253FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A9755181ECD65150058E7E6 /* bulletSoundEffect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bulletSoundEffect.mp3; sourceTree = "<group>"; };
+		6A97551A1ECD7CB00058E7E6 /* explosionSoundEffect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = explosionSoundEffect.wav; sourceTree = "<group>"; };
+		6A97551C1ECD7EC70058E7E6 /* theBoldFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = theBoldFont.ttf; sourceTree = "<group>"; };
+		6A97551E1ECD8DE90058E7E6 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		6AC665E21ECEA8A000FA9879 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		6AC665E41ECEB74200FA9879 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +76,13 @@
 				6A5E83EC1EB1A33C00253FE4 /* GameScene.sks */,
 				6A5E83EE1EB1A33C00253FE4 /* Actions.sks */,
 				6A5E83F01EB1A33C00253FE4 /* GameScene.swift */,
+				6A97551E1ECD8DE90058E7E6 /* GameOverScene.swift */,
+				6AC665E21ECEA8A000FA9879 /* MainMenuScene.swift */,
 				6A5E83F21EB1A33C00253FE4 /* GameViewController.swift */,
+				6A9755181ECD65150058E7E6 /* bulletSoundEffect.mp3 */,
+				6A97551A1ECD7CB00058E7E6 /* explosionSoundEffect.wav */,
+				6AC665E41ECEB74200FA9879 /* backgroundMusic.mp3 */,
+				6A97551C1ECD7EC70058E7E6 /* theBoldFont.ttf */,
 				6A5E83F41EB1A33C00253FE4 /* Main.storyboard */,
 				6A5E83F71EB1A33C00253FE4 /* Assets.xcassets */,
 				6A5E83F91EB1A33C00253FE4 /* LaunchScreen.storyboard */,
@@ -133,11 +151,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A97551B1ECD7CB00058E7E6 /* explosionSoundEffect.wav in Resources */,
 				6A5E83F61EB1A33C00253FE4 /* Main.storyboard in Resources */,
+				6AC665E51ECEB74200FA9879 /* backgroundMusic.mp3 in Resources */,
 				6A5E83ED1EB1A33C00253FE4 /* GameScene.sks in Resources */,
 				6A5E83F81EB1A33C00253FE4 /* Assets.xcassets in Resources */,
+				6A97551D1ECD7EC70058E7E6 /* theBoldFont.ttf in Resources */,
 				6A5E83FB1EB1A33C00253FE4 /* LaunchScreen.storyboard in Resources */,
 				6A5E83EF1EB1A33C00253FE4 /* Actions.sks in Resources */,
+				6A9755191ECD65150058E7E6 /* bulletSoundEffect.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,8 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC665E31ECEA8A000FA9879 /* MainMenuScene.swift in Sources */,
 				6A5E83F11EB1A33C00253FE4 /* GameScene.swift in Sources */,
 				6A5E83F31EB1A33C00253FE4 /* GameViewController.swift in Sources */,
+				6A97551F1ECD8DE90058E7E6 /* GameOverScene.swift in Sources */,
 				6A5E83EB1EB1A33C00253FE4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +299,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24SM6522LU;
 				INFOPLIST_FILE = "SIT206 Assignment 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JosipsGame.SIT206-Assignment-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -288,10 +314,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 24SM6522LU;
 				INFOPLIST_FILE = "SIT206 Assignment 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JosipsGame.SIT206-Assignment-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -314,6 +342,7 @@
 				6A5E84011EB1A33C00253FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
